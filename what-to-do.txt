@@ -1,0 +1,13 @@
+What the page needs:
+    - What is a shelf
+    - Tools to build one
+    - Steps to build
+    - Form to upload a shelf's photo, name, comments
+
+Roadmap
+    - Research
+    - Write all but Form
+    - Write html for prev
+    - Give style
+    - Create form, style it and control it
+    - Share page and gain feedback
