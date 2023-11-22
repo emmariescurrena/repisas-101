@@ -6,8 +6,19 @@ What the page needs:
 
 Roadmap
     - Research
-    - Write all but Form
+    - Write tools (checklist), materials (checklist) and steps
     - Write html for prev
     - Give style
     - Create form, style it and control it
+    - Implement switch between languages, wall material and dark/light theme
+    - Create database for people's shelfs
+    - Select three random persons of the database and show them in the top
     - Share page and gain feedback
+
+Traduccions:
+Mensula - bracket
+Taladro - drill
+Cinta métrica - measuring tape
+Tarugo - ramplug
+Tornillo - screw
+Destornillador - screwdriver
