@@ -4,6 +4,7 @@ What the page needs:
     - What is a shelf
     - Cautions and limits
     - Tools to build one
+    - Materials
     - Steps to build
     - Form to upload a shelf's photo, name, comments
 
@@ -18,7 +19,7 @@ Roadmap
     - Select three random persons of the database and show them in the top
     - Share page and gain feedback
 
-Traduccions:
+Traductions:
 Mensula - bracket
 Taladro - drill
 Cinta métrica - measuring tape
