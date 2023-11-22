@@ -1,4 +1,6 @@
 What the page needs:
+    - Shelfs 101
+    - People's shelfs
     - What is a shelf
     - Tools to build one
     - Steps to build
