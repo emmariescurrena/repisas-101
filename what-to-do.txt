@@ -2,6 +2,7 @@ What the page needs:
     - Shelfs 101
     - People's shelfs
     - What is a shelf
+    - Cautions and limits
     - Tools to build one
     - Steps to build
     - Form to upload a shelf's photo, name, comments
