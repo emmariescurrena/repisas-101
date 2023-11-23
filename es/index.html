@@ -67,46 +67,96 @@
     </div>
     <div class="tools">
         <h2>Herramientas</h2>
-        <input type="checkbox" class="checkitem" name="pencil"/>
-        <label for="pencil">Lápiz</label>
-        <input type="checkbox" class="checkitem" name="meter"/>
-        <label for="meter">Cinta métrica</label>
-        <input type="checkbox" class="checkitem" name="screwdriver"/>
-        <label for="screwdriver">Destornillador phillips</label>
-        <input type="checkbox" class="checkitem" name="drill"/>
-        <label for="drill">Taladro</label>
-        <input type="checkbox" class="checkitem" name="level"/>
-        <label for="level">Nivel de mano</label>
-        <input type="checkbox" class="checkitem" name="hammer"/>
-        <label for="hammer">Martillo</label>
-        <input type="checkbox" class="checkitem" name="square"/>
-        <label for="square">Escuadra de precisión</label>
+        <div class="checkitem">
+            <input type="checkbox" name="pencil"/>
+            <label for="pencil">Lápiz</label>
+        </div>
+        <div class="checkitem">
+            <input type="checkbox" name="meter"/>
+            <label for="meter">Cinta métrica</label>
+        </div>
+        <div class="checkitem">
+            <input type="checkbox" name="screwdriver"/>
+            <label for="screwdriver">Destornillador phillips</label>
+        </div>
+        <div class="checkitem">
+            <input type="checkbox" name="drill"/>
+            <label for="drill">Taladro</label>
+        </div>
+        <div class="checkitem">
+            <input type="checkbox" name="level"/>
+            <label for="level">Nivel de mano</label>
+        </div>
+        <div class="checkitem">
+            <input type="checkbox" name="hammer"/>
+            <label for="hammer">Martillo</label>
+        </div>
+        <div class="checkitem">
+            <input type="checkbox" name="square"/>
+            <label for="square">Escuadra de precisión</label>
+        </div>
         <p>Si necesitás cortar la madera, necesitarás:</p>
-        <input type="checkbox" class="checkitem" name="saw"/>
-        <label for="saw">Sierra circular o de mano</label>
+        <div class="checkitem">
+            <input type="checkbox" name="saw"/>
+            <label for="saw">Sierra circular o de mano</label>
+        </div>
     </div>
     <div class="mats">
         <h2>Materiales para repisa de 60x20x18mm (escalar a otros tamaños):</h2>
-        <input type="checkbox" class="checkitem" name="wood"/>
-        <label for="wood">Madera de 60x20x18mm o madera de ?x20x18mm para
-            cortar
-        </label>
-        <input type="checkbox" class="checkitem" name="bracket"/>
-        <label for="bracket">2 ménsulas esquineras de 20x15x4in a la profundidad de la
-            repisa
-        </label>
-        <input type="checkbox" class="checkitem" name="screws"/>
-        <label for="screws">4 tornillos para madera de 2 cm</label>
-        <input type="checkbox" class="checkitem" name="drill"/>
-        <label for="drill">Taladro</label>
-        <input type="checkbox" class="checkitem" name="level"/>
-        <label for="level">Nivel de mano</label>
+        <div class="checkitem">
+            <input type="checkbox" name="wood"/>
+            <label for="wood">Madera de 60x20x18mm o madera de ?x20x18mm para
+                cortar
+            </label>
+        </div>
+        <div class="checkitem">
+            <input type="checkbox" name="bracket"/>
+            <label for="bracket">2 ménsulas esquineras de 20x15x4in a la profundidad de la
+                repisa
+            </label>
+        </div>
+        <div class="checkitem">
+            <input type="checkbox" name="screws"/>
+            <label for="screws">4 tornillos para madera de 2 cm</label>
+        </div>
+        <div class="checkitem">
+            <input type="checkbox" name="drill"/>
+            <label for="drill">Taladro</label>
+        </div>
+        <div class="checkitem">
+            <input type="checkbox" name="level"/>
+            <label for="level">Nivel de mano</label>
+        </div>
     </div>
     <div class="steps">
 
     </div>
     <div class="form">
-
+        <form action="">
+            <div class="formInput">
+                <label for="GET-name">Nombre:</label>
+                <input id="GET-name" type="text" name="name" />
+            </div>
+            <div class="formInput">
+                <label for="GET-img">Imagen:</label>
+                <input id="GET-img" type="image" name="image" alt="Submit" />
+            </div>
+            <div class="formInput">
+                <label for="GET-desc">Descripción:</label>
+                <input id="GET-desc" type="text" name="desc" />
+            </div>
+            <div class="formInput">
+                <label for="GET-price">Precio:</label>
+                <input id="GET-price" type="text" name="price" />
+            </div>
+            <div class="formInput">
+                <label for="GET-cat">Categoría:</label>
+                <input id="GET-cat" type="text" name="cat" />
+            </div>
+            <div class="submit">
+                <input type="submit" value="Guardar"/>
+            </div>
+        </form>
     </div>
 </body>
 </html>
