@@ -26,3 +26,13 @@ Cinta métrica - measuring tape
 Tarugo - ramplug
 Tornillo - screw
 Destornillador - screwdriver
+
+Colors:
+    Claro más claro: #ffffff
+    Claro más oscuro:
+    Oscuro mas claro: 
+    Oscuro más oscuro: #141c11
+    Gris:
+    Color secundario: #d42020
+    
+

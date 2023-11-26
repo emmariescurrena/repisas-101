@@ -3,36 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"> 
     <title>Repisas 101</title>
 </head>
 <body>
     <div class="header">
         <h1>Repisas 101</h1>
-        <p>Una guía simple para hacer tu propia repisa</p>
+        <p>Una guía simple e intuitiva para hacer tu propia repisa</p>
     </div>
     <div class="what">
         <h2>¿Qué es una repisa?</h2>
-        <p>Una repisa es una pieza, normalmente de madera, que se amura a la
-            pared con la ayuda de diferentes métodos. Es una excelente forma de
-            aprovechar espacio de las paredes y son fáciles de hacer, como
-            veremos a continuación. 
-        </p>
+        <ol>
+            <li>Placa, normalmente de madera, que se amura a la
+            pared con la ayuda de diferentes métodos, con el propósito de servir
+            de soporte.
+            </li>
+            <li>Excelente forma de aprovechar espacio de las paredes.</li>
+            <li>Algo que te hace más feliz (objetivamente)</li>    
+        </ol>
     </div>
     <div class="cautions">
-        <h2>Precauciones, limitaciones y aclaraciones</h2>
+        <h2>Prestar atención</h2>
         <p>Explicaré a continuación algunas cosas a tener en cuenta antes de
-            comenzar a trabajar. Por favor, leer hasta el final.
-            
+            comenzar a trabajar. <strong>Por favor, leer hasta el final</strong>.
         </p>
-        <h3>"Terminología"</h3>
+        <div class="caution">
+        <h3>Terminología</h3>
         <ul>
-            <li>Las medidas de la madera se leen "largo x ancho x alto"</li>
-            <li>Las medidas de las ménsulas se leen "largo una pata x largo otra
-                pata x ancho"
+            <li>Las medidas de la madera se leen <strong>"largo x ancho x alto"
+            </strong>
             </li>
-            <li>Las medidas se expresan en centímetros excepto que se aclare</li>
+            <li>Las medidas de las ménsulas se leen <strong>"largo una pata x
+                largo otra pata x ancho"</strong>
+            </li>
+            <li>Las medidas se expresan en <strong>centímetros</strong> excepto
+                que se exprese lo contrario
+            </li>
         </ul>
-        <h3>Respecto a la repisa</h3>
+        </div>
+        <div class="caution">
+        <h3>Repisa</h3>
         <p>El tamaño de la repisa y la cantidad de ménsulas dependerá del
             propósito de la ménsula. Por ejemplo, una repisa de 80 de ancho y
             20 de profundidad dedicada a un par de figuritas solo requerirá
@@ -42,28 +52,29 @@
             se arquea o se ve forzada y, si es así, colocar una tercera ménsula
             en el medio. Este método fue testeado con repisas de 1m sin
             mucha carga. Para repisas de mayor ancho, bastará con agregar más
-            ménsulas, pero en profundidad, recomidndo no superar los 30cm. En
+            ménsulas, pero en profundidad, recomiendo no superar los 30cm. En
             caso de hacerlo, recomiendo amurar de otra forma.
         </p>
-        <h3>Respecto a donde hacer el agujero</h3>
-        <p>El principal inconveniente que te puedes encontrar es respecto a los
-            circuitos eléctricos, ya que al agujerear, si no lo hacemos en el
-            lugar correcto, podemos dañar tanto el circuito, como al taladro y
-            hasta a nosotros mismos. Les dejo links al respecto, ya que soy algo
+        </div>
+        <div class="caution">
+        <h3>Donde colocar la repisa</h3>
+        <p>Hay que ser muy cuidadosos, ya que, agujereando donde no se debe, 
+            podemos dañar la pared, algo que este dentro, el taladro y hasta a
+            nosotros mismos. Les dejo links al respecto, ya que soy algo
             ignorante en el tema, pero procedo a dejar algunos lugares donde es
             mayormente riesgoso agujerear, tanto cerca, como horizontal y
-            verticalmente.
+            verticalmente, excepto que sepas lo que estás haciendo, .
         </p>
         <ul>
             <li>Lámparas</li>
             <li>Enchufes</li>
             <li>Salidas de agua</li>
             <li>Llaves de gas</li>
-            <li>Azulejos, excepto que sepas lo que estás haciendo. Aquí
-                explicaré como colocar en ladrillo y en placa de yeso o durlock.
+            <li>Azulejos, metal o cualquier material muy resistente
             </li>
         </ul>
         <p>Más información al respecto:</p>
+        </div>
     </div>
     <div class="checkboxes">
         <div class="tools">
@@ -103,7 +114,8 @@
             </div>
         </div>
         <div class="mats">
-            <h2>Materiales para repisa de 60x20x18mm (escalar a otros tamaños):</h2>
+            <h2>Materiales</h2>
+            <p>para repisa de 60x20x18mm</p>
             <div class="checkitem">
                 <input type="checkbox" name="wood"/>
                 <label for="wood">Madera de 60x20x18mm o madera de ?x20x18mm para
@@ -112,8 +124,8 @@
             </div>
             <div class="checkitem">
                 <input type="checkbox" name="bracket"/>
-                <label for="bracket">2 ménsulas esquineras de 20x15x a la profundidad de la
-                repisa
+                <label for="bracket">2 ménsulas esquineras de 20x15x1,5in a la
+                    profundidad de la repisa
                 </label>
             </div>
             <div class="checkitem">
@@ -121,12 +133,12 @@
                 <label for="screws">4 tornillos para madera de 2 cm</label>
             </div>
             <div class="checkitem">
-                <input type="checkbox" name="drill"/>
-                <label for="drill">Taladro</label>
+                <input type="checkbox" name=""/>
+                <label for="drill">4 tacos con respectivos tornillos</label>
             </div>
             <div class="checkitem">
-                <input type="checkbox" name="level"/>
-                <label for="level">Nivel de mano</label>
+                <input type="checkbox" name="sandpaper"/>
+                <label for="sandpaper">Lija de mano grano N°80</label>
             </div>
         </div>
     </div>
