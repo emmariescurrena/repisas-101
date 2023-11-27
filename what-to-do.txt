@@ -26,13 +26,15 @@ Cinta métrica - measuring tape
 Tarugo - ramplug
 Tornillo - screw
 Destornillador - screwdriver
+lijar - sand
 
 Colors:
     Claro más claro: #ffffff
     Claro más oscuro:
-    Oscuro mas claro: 
-    Oscuro más oscuro: #141c11
+    Oscuro mas claro: #11111c
+    Oscuro más oscuro: #272135
     Gris:
-    Color secundario: #d42020
+    Color secundario: #9f0dcf
     
-
+Sources:
+    Drywall tutorial: https://www.youtube.com/watch?v=TxBhEj4HCi4

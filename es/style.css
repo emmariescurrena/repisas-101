@@ -21,7 +21,7 @@ body {
     color:#ffffff;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Open Sans Bold", sans-serif;
 }
 
@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 48px;Lijar madera
 }
 
 h3 {
@@ -114,29 +114,25 @@ ol {
     background-color: #272135;
 }
 
-.tools, .mats {
+.needles {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
-
-.tools {
-
-}
-
-.mats {
+    gap: 25px;
 }
 
 .list {
     display: flex;
     flex-direction: column;
+    h4 {
+        margin: 0.5em;
+    }
 }
 
 .item {
     display: grid;
     margin: 0.5em;
     grid-template-columns: 1em auto;
-    gap: 0.7em;
+    gap: 0.8em;
 }
 
 
@@ -166,11 +162,29 @@ input[type="checkbox"]:checked::before {
     transform: scale(1);
 }
 
+.steps {
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #272135;
+    h2 {
+        align-self: center;
+    }
+}
+
+.step {
+    margin: 60px 0;
+    padding: 24px 60px;
+    border-radius: 24px;
+    background-color: #11111c;
+}
+
 .form {
     padding: 60px 0; 
     display: flex;
     flex-direction: column;
-    background-color:#272135;
+    background-color: #11111c;
 }
 
 
