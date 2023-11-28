@@ -28,22 +28,20 @@
             comenzar a trabajar. <strong>Por favor, leer hasta el final</strong>.
         </p>
         <div class="caution">
-        <h3>Terminología</h3>
-        <ul>
-            <li>Las medidas de la madera se leen <strong>"largo x ancho x alto"
+            <h3>Terminología</h3>
+            <p>Las medidas de la madera se leen <strong>"largo x ancho x alto"
             </strong>
-            </li>
-            <li>Las medidas de las ménsulas se leen <strong>"largo una pata x
+            </p>
+            <p>Las medidas de las ménsulas se leen <strong>"largo una pata x
                 largo otra pata x ancho"</strong>
-            </li>
-            <li>Las medidas se expresan en <strong>centímetros</strong> excepto
+            </p>
+            <p>Las medidas se expresan en <strong>centímetros</strong> excepto
                 que se exprese lo contrario
-            </li>
-        </ul>
+            </p>
         </div>
         <div class="caution">
-        <h3>Repisa</h3>
-        <p>El tamaño de la repisa y la cantidad de ménsulas dependerá del
+            <h3>Repisa</h3>
+            <p>El tamaño de la repisa y la cantidad de ménsulas dependerá del
             propósito de la repisa. Por ejemplo, una repisa de 80x20x18mm
             dedicada a un par de figuritas solo requerirá
             dos ménsulas, pero una repisa del mismo tamaño dedicada a plantas
@@ -51,36 +49,34 @@
             caso de duda, recomiendo colocar dos ménsulas a los costados,
             probar si la madera se arquea o se ve forzada y, si es así, colocar
             una tercera ménsula en el medio.
-        </p>
-        <p>Esta guía fue testeada con repisas de 1m sin
+            </p>
+            <p>Esta guía fue testeada con repisas de 1m sin
             mucha carga. Para repisas de mayor ancho, bastará con agregar más
             ménsulas, pero en profundidad, recomiendo no superar los 30cm. En
             caso de hacerlo, recomiendo amurar de otra forma.
-        </p>
+            </p>
         </div>
         <div class="caution">
-        <h3>Dónde colocar la repisa</h3>
-        <p>Hay que ser muy cuidadosos, ya que, agujereando donde no se debe, 
+            <h3>Dónde colocar la repisa</h3>
+            <p>Hay que ser muy cuidadosos, ya que, agujereando donde no se debe, 
             podemos dañar la pared, algo que este dentro, el taladro y hasta a
             nosotros mismos. <strong>Recomiendo investigar</strong>, ya que soy
             algo ignorante en el tema, pero procedo a dejar algunos <strong>
             lugares donde es mayormente riesgoso agujerear</strong>, tanto cerca
             , como horizontal y verticalmente, excepto que sepas lo que estás
             haciendo:
-        </p>
-        <ul>
-            <li>Lámparas</li>
-            <li>Enchufes</li>
-            <li>Salidas de agua</li>
-            <li>Llaves de gas</li>
-            <li>Azulejos, metal o cualquier material muy resistente
-            </li>
-        </ul>
-        <p>Más información al respecto:</p>
+            </p>
+            <ul>
+                <li>Lámparas</li>
+                <li>Enchufes</li>
+                <li>Salidas de agua</li>
+                <li>Llaves de gas</li>
+                <li>Azulejos, metal o cualquier material muy resistente</li>
+            </ul>
         </div>
     </div>
     <div class ="need">
-        <p>Para una repisa de 60x20x18mm...</p>
+    <p>Para una repisa de 60x20x18mm...</p>
     <h2>Necesitamos:</h2>
     <div class="checkboxes">
         <div class="needles">
@@ -190,7 +186,7 @@
         <h2>Pasos a seguir</h2>
         <div id="concrete">
         <div class="step">
-            <h3>Cortar y lijar madera</h3>
+            <h3>Cortar madera</h3>
         </div>
         <div class="step">
             <h3>Atornillar ménsulas a la madera</h3>
@@ -206,26 +202,37 @@
         </div>
         </div>
     </div>
-    <div class="form">
-        <h2></h2>
+    <div class="feedback">
+        <h2>¿Cómo fue tu experiencia?</h2>
+        <h3>Podés compartirla acá abajo</h3>
+        <div class="form">
         <form action="">
-            <div class="formInput">
-                <label for="GET-name">Nombre:</label>
+            <div id="textInput" class="formInput">
+                <label for="name">Nombre:</label>
                 <input id="GET-name" type="text" name="name"
-                placeholder="Roberto Casablanca"/>
+                placeholder="Roberto Casablanca, Anónimo123"/>
             </div>
-            <div class="formInput">
-                <label for="GET-img">Foto de/con tu repisa en uso:</label>
-                <input id="GET-img" type="image" name="image" alt="Subir" />
+            <div id="imgInput" class="formInput">
+                <label for="image">Foto de/con tu repisa en uso:</label>
+                <input class="uploadBtn" id="GET-img" type="file" accept="image/*"
+                name="image" alt="Subir" />
             </div>
-            <div class="formInput">
-                <label for="GET-text">Cómo fue tu experiencia:</label>
-                <input id="GET-text" type="text" name="text" />
+            <div id="expInput" class="formInput">
+                <label for="exp">Cómo fue tu experiencia:</label>
+                <input id="GET-exp" type="text" name="exp" 
+                placeholder="Fue una experiencia..."/>
             </div>
             <div class="submit">
-                <input type="submit" value="Guardar"/>
+                <input class="submitBtn" type="submit" value="Guardar"/>
             </div>
         </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Made by emmariescurrena</p>
+        <a href="https://github.com/emmariescurrena" target="_blank">
+            <img src="../img/github.png" alt="github" >
+        </a>
     </div>
 </body>
 </html>

@@ -88,7 +88,7 @@ ol {
 
 .caution {
     margin: 60px 0;
-    padding: 24px 60px;
+    padding: 24px 60px 36px;
     border-radius: 24px;
     background-color: #11111c;
 }
@@ -180,12 +180,99 @@ input[type="checkbox"]:checked::before {
     background-color: #11111c;
 }
 
-.form {
-    padding: 60px 0; 
+.feedback {
+    padding: 60px 150px; 
     display: flex;
     flex-direction: column;
+    text-align: center;
     background-color: #11111c;
+    h2 {
+        margin: 0;
+    }
 }
 
+.form {
+    margin: 60px 150px;
+    padding: 40px 60px;
+    text-align: left;
+    border-radius: 24px;
+    background-color: #272135;
+}
 
+.formInput {
+    margin: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    label {
+        font-family: "Open Sans Bold", sans-serif;
+        font-size: 24px;
+    }
+}
 
+input[type=text] {
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    
+    background-color: #11111c;
+    font-size: 18px;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 2px solid #9f0dcf;
+}
+
+#imgInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.uploadBtn {
+    max-width: 250px;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: #9f0dcf;
+    font-family: "Open Sans Bold", sans-serif;
+    color: #ffffff;
+}
+
+#GET-exp {
+    height: 200px
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn {
+    padding: 4px 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: #9f0dcf;
+    font-family: "Open Sans Bold", sans-serif;
+    color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272135;
+    a {
+        margin: 0 5px;
+        padding: 0;
+    }
+}
+
+a > img {
+    width: 30px;
+    height: 30px;
+}
