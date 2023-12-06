@@ -21,82 +21,92 @@ body {
     color:#ffffff;
 }
 
-h1, h2, h3, h4, .uploadBtn, .submitBtn {
+h1, h2, h3, h4, #imgInput, .submitBtn, .wallBtn {
     font-family: "Open Sans Bold", sans-serif;
 }
 
 h1, h2 {
-    color: #9f0dcf;
-}
-
-h1 {
-    font-size: 80px;
+    color: #920ebd;
 }
 
 h2 {
-    font-size: 48px;
+    margin: 0 0 0.5em;
 }
 
 h3 {
-    font-size: 30px;
+    margin: 0 0 0.4em;
+}
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 3em;
 }
 
 p, li, label {
-    font-size: 18px;
+    font-size: 1em;
 }
 
 li {
-    margin: 1vw 0;
+    margin: 0.5em 0;
+}
+
+label {
+    min-width: fit-content;
 }
 
 strong {
-    padding: 0 5px;
+    padding: 0 0.1em;
     color: #ffffff;
-    background-color: #9f0dcf;
+    background-color: #920ebd;
 }
-{
-    font
-}
-.header {
-    padding: 200px 72px;
+
+.top {
+    padding: 10em 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 2em;
     background-color: #272135;
-    h1, h3 {
+    h1, h2 {
         margin: 0;
+    }
+    h2 {
+        font-size: 2.5em;
+        color: #ffffff;
     }
 }
 
 .what {
-    padding: 60px 150px;
+    padding: 4em 10em;
     background-color: #11111c;
-    h2 {
-        margin-top: 0;
-    }
 }
 
 ol {
-    padding: 0 18px;
+    padding: 0 1em;
 }
 
 .cautions {
-    padding: 60px 150px;
+    padding: 4em 10em;
     background-color: #272135;
 }
 
 .caution {
-    margin: 60px 0;
-    padding: 24px 60px 36px;
+    margin: 4em 0;
+    padding: 2.5em 4em;
     border-radius: 24px;
     background-color: #11111c;
 }
 
 .need {
-    padding: 60px 0; 
+    padding: 4em 10em; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,21 +120,26 @@ ol {
 
 .checkboxes {
     display: flex;
-    margin: 50px 150px;
-    padding: 50px;
-    border-radius: 24px;
-    background-color: #272135;
+    gap: 2em;
+    margin: 4em 8em;
+    background-color: #11111c;
 }
 
 .needles {
-    margin: 0 25px;
-    gap: 25px;
+    height: fit-content;
+    padding: 2.5em;
+    gap: 1.5em;
+    border-radius: 24px;
+    background-color: #272135;
+    h3 {
+        margin-top: 0;
+    }
 }
 
 .list {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 0.6em;
 }
 
 .item {
@@ -137,7 +152,7 @@ input[type="checkbox"] {
     appearance: none;   
     vertical-align: middle; 
     position: relative;
-    bottom: -0.05em;
+    bottom: -0.06em;
     width: 1em;
     height: 1em;
     font: inherit;
@@ -154,7 +169,7 @@ input[type="checkbox"]::before {
     width: 0.65em;
     height: 0.65em;
     transform: scale(0);
-    box-shadow: inset 1em 1em white;
+    box-shadow: inset 1em 1em #ffffff;
     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
@@ -163,37 +178,69 @@ input[type="checkbox"]:checked::before {
 }
 
 .steps {
-    padding: 50px 150px;
+    padding: 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #272135;
-    h2 {
-        align-self: center;
-    }
+    text-align: center;
+}
+
+.wallType {
+    margin: 1em 0;
+    display: flex;
+    gap: 1em;
+}
+
+.wallBtn {
+    flex: 1;
+    height: 3em;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.5em;
+    background-color: #11111c;
+    color: #ffffff;
+}
+
+.wallBtn:hover {
+    transition: 0.25s;
+    scale: 1.025;
 }
 
 .step {
-    margin: 60px 0;
-    padding: 24px 60px;
+    display: flex;
+    flex-direction: column;
+    margin: 3em 11em;
+    padding: 2em 3.5em;
     border-radius: 24px;
     background-color: #11111c;
+    text-align: left;
+}
+
+.substep {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: -0.5em 0 2em;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    align-self: center;
 }
 
 .feedback {
-    padding: 60px 150px; 
+    padding: 4em 10em; 
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: #11111c;
-    h2 {
-        margin: 0;
-    }
 }
 
 .form {
-    margin: 60px 150px;
-    padding: 40px 60px;
+    margin: 2em 5em;
+    padding: 1.5em 2em;
     text-align: left;
     border-radius: 24px;
     background-color: #272135;
@@ -206,49 +253,63 @@ input[type="checkbox"]:checked::before {
     gap: 1em;
     label {
         font-family: "Open Sans Bold", sans-serif;
-        font-size: 24px;
+        font-size: 1.5em;
     }
 }
 
 input[type=text], textarea {
-    padding: 15px 10px;
+    padding: 0.8em;
     box-sizing: border-box;
     border: 2px solid transparent;
     border-radius: 5px;
     background-color: #11111c;
-    font-size: 18px;
-    color: whitesmoke;
+    font-size: 1em;
+    color: #f5f5f5;
     transition: 0.3s;
 }
 
 input[type=text]:focus, textarea:focus {
     outline: none;
-    border: 2px solid #9f0dcf;
+    border: 2px solid #920ebd;
 }
 
-#imgInput {
+#nameDiv, #imgDiv {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.uploadBtn {
-    max-width: 250px;
-    padding: 4px 6px;
-    border: none;
-    border-radius: 6px;
-    background-color: #9f0dcf;
-    color: #ffffff;
+#nameInput {
+    flex: 1;
 }
 
-#GET-exp {
-    height: 200px
+#imgInput { 
+    padding: 0.8em;
+    border: none;
+    border-radius: 6px;
+    background-color: #920ebd;
+    color: #ffffff;
 }
 
 textarea {
     resize: none;
+    height: 10.5em;
 }
 
+#expDiv {
+    position: relative;
+}
+
+#charDiv {
+    position: absolute;
+    bottom: 0;
+    width: 4em;
+    text-align: right;
+}
+
+#charCount {
+    color: #d3d3d3;
+}
 
 .submit {
     display: flex;
@@ -257,26 +318,27 @@ textarea {
 
 .submitBtn {
     flex: 1;
-    padding: 10px;
+    padding: 0.5em;
     border: none;
     border-radius: 6px;
-    background-color: #9f0dcf;
-    font-size: 24px;
+    background-color: #920ebd;
+    font-size: 1.5em;
     color: #ffffff;
 }
 
-.footer {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.25em 0;
     background-color: #272135;
     a {
-        margin: 0 5px;
+        margin: 0 0.5em;
         padding: 0;
     }
 }
 
 a > img {
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
 }
