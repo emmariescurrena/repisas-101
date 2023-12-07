@@ -84,7 +84,7 @@
             <div class="list">
                 <label class="item">
                     <input type="checkbox" name="wood"/>
-                    Madera de 60x20x18mm o madera de ?x20x18mm para cortar
+                    Madera de 60x20x18mm o de ?x20x18mm para cortar
                 </label>
                 <label class="item">
                     <input type="checkbox" name="bracket"/>
@@ -289,17 +289,18 @@
         <form id="form" action="" onsubmit="">
             <div id="nameDiv" class="formInput">
                 <label for="nameInput">Tu nombre:</label>
-                <input id="nameInput" type="text" maxlength="60"
+                <input id="nameInput" name="nameInput" type="text"
+                aria-required="true"maxlength="60" autocomplete="given-name"
                 placeholder="Roberto Casablanca, Anónimo123" required/>
             </div>
             <div id="imgDiv" class="formInput">
                 <label for="imgInput">Foto de/con tu repisa en uso:</label>
-                <input id="imgInput" type="file" accept="image/*"
-                alt="Subir" required/>
+                <input id="imgInput" name="imgInput" type="file"
+                aria-required="true" accept="image/*" alt="Subir" required/>
             </div>
             <div id="expDiv" class="formInput">
                 <label for="expInput">Cómo fue tu experiencia:</label>
-                <textarea id="expInput" type="text"  maxlength="400" value="eso"
+                <textarea id="expInput" name="expInput" type="text" maxlength="400"
                 placeholder="Fue una experiencia..."></textarea>
                 <div id="charDiv">
                     <p id="charCount">0/400</p>
