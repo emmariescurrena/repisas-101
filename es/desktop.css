@@ -12,7 +12,6 @@
 
 * {
     font-family: "Open Sans Regular", sans-serif;
-    font-size: 16px;
 }
 
 body {
@@ -30,18 +29,23 @@ h1, h2 {
     color: #920ebd;
 }
 
-h1 {
-    font-size: 5em;
-}
-
 h2 {
-    margin: 0;
-    font-size: 3em;
+    margin: 0 0 0.5em;
 }
 
 h3 {
     margin: 0 0 0.4em;
-    font-size: 2em;
+}
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 3em;
 }
 
 p, li, label {
@@ -62,7 +66,6 @@ label {
 
 strong {
     padding: 0 0.1em;
-    font-size: inherit;
     color: #ffffff;
     background-color: #920ebd;
 }
@@ -86,56 +89,46 @@ strong {
 }
 
 .what {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 6% 7.5% 1%;
+    padding: 5% 12.5%;
     background-color: #11111c;
 }
 
 .cautions {
+    padding: 5% 12.5%;
     background-color: #272135;
 }
 
-.cautionsTitle {
-    padding: 5% 7.5%;
-}
-
 .caution {
-    margin: 0 0 7.5%;
-    padding: 6% 7.5%;
+    margin: 5% 0;
+    padding: 4% 5%;
+    border-radius: 24px;
     background-color: #11111c;
 }
 
 .need {
-    padding: 12.5% 7.5%;
+    padding: 5% 12.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #11111c;
 }
 
-.needTitle {
-    display: flex;
-    flex-direction: column;
+.title {
     text-align: center;
-    margin-block-end: 1.5em;
+    margin: 0;
 }
 
 .checkboxes {
     display: flex;
-    flex-direction: column;
     gap: 2em;
-    margin: 5%;
+    margin: 5% 10%;
     background-color: #11111c;
 }
 
 .needles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10%;
-    gap: 0.5em;
+    height: fit-content;
+    padding: 2.5em;
+    gap: 1.5em;
     border-radius: 24px;
     background-color: #272135;
     h3 {
@@ -208,7 +201,7 @@ input[type="checkbox"]:focus {
     height: 3em;
     border: none;
     border-radius: 12px;
-    font-size: 1em;
+    font-size: 1.5em;
     background-color: #11111c;
     color: #ffffff;
 }
@@ -286,6 +279,7 @@ input[type=text]:focus, textarea:focus {
 
 #nameDiv, #imgDiv {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
