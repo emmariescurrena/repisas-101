@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,9 @@
     <title>Repisas 101</title>
 </head>
 <body>
+    <button
+        type="button"
+        data-theme-toggle>Change to light theme</button>
     <section class="top">
         <h1>Repisas <strong>101</strong></h1>
         <h2>Una guía simple e intuitiva para hacer tu propia repisa</h2>
@@ -52,10 +55,10 @@
             probar si la madera se arquea o se ve forzada y, si es así, colocar
             una tercera ménsula en el medio.
             </p>
-            <p>Esta guía fue testeada con repisas de 1m sin
-            mucha carga. Para repisas de mayor ancho, bastará con agregar más
-            ménsulas, pero en profundidad, recomiendo no superar los 30cm. En
-            caso de hacerlo, recomiendo amurar de otra forma.
+            <p>Esta guía fue testeada con repisas de 1m sin mucha carga. Para
+            repisas de mayor ancho, bastará con agregar más ménsulas, pero en
+            profundidad, recomiendo no superar los 30cm. En caso de hacerlo,
+            recomiendo amurar de otra forma.
             </p>
         </div>
         <div class="caution">
@@ -88,7 +91,7 @@
             <div class="list">
                 <label class="item">
                     <input type="checkbox" name="wood"/>
-                    Madera de 60x20x18mm o de ?x20x18mm para cortar
+                    Madera de 60x20x18mm
                 </label>
                 <label class="item">
                     <input type="checkbox" name="bracket"/>
@@ -147,10 +150,6 @@
                     <input type="checkbox" name="square"/>
                     Escuadra de precisión
                 </label>
-                <label class="item">
-                    <input type="checkbox" name="saw"/>
-                    Sierra circular o de mano (si es necesario cortar la madera)
-                </label>
             </div>
         </div>
         <div class="needles">
@@ -169,73 +168,81 @@
     </div>
     </section>
     <section class="steps">
-        <div class="stepsTitle">
-            <h2>Pasos a seguir</h2>
-            <h3>Selecciona en que tipo de pared vas a construir</h3>
-        </div>
-        <div class="wallType">
-            <button id="concreteBtn" class="wallBtn">Ladrillo</button>
-            <button id="drywallBtn" class="wallBtn">Drywall</button>
-        </div>
-        <div id="concreteSteps">    
+        <h2 class="stepsTitle">Pasos a seguir</h2>
+        <div class="stepsDiv">    
         <div class="step">
-            <h3>Preparar madera</h3>
-            <div class="substep">
-                <p>Con ayuda de la cinta métrica, hacemos una pequeña marca al
-                costado de la madera a la altura requerida (en este caso, 60cm).
-                Usamos la escuadra para hacer una línea del lado marcado hasta
-                el otro.
-                </p>
-                <img class="photo" src="../img/empty.jpg">
-            </div>
-            <div class="substep">
-                <p>Cortar la madera donde marcamos previamente. <strong>Buscar
-                instrucciones</strong> de como cortar con la herramienta elegida
-                para evitar problemas.
-                </p>
-                <img class="photo" src="../img/empty.jpg">
-            </div>
+            <h3>1. Preparar madera</h3>
             <div class="substep">
                 <p>Si cortamos la madera o pedimos que la corten, debemos lijarla. 
                 Debemos hacer frotes cortos para así evitar levantar astillas y
                 lastimarnos. La madera está lista cuando se sienta lisa al tacto.
                 </p>
-                <img class="photo" src="../img/empty.jpg">
+                <figure class="photos">
+                    <img class="photo" src="./img/empty.jpg">
+                </figure>
             </div>
         </div>
         <div class="step">
-            <h3>Atornillar ménsulas a la madera</h3>
+            <h3>2. Atornillar ménsulas a la madera</h3>
             <div class="substep">
                 <p>Ahora debemos marcar donde irán las ménsulas. <strong>La ménsula
-                debe estar a 2,5cm del lateral, recto respecto a la madera y la
+                debe estar a 2,5cm aprox. del lateral, recto respecto a la madera y la
                 pata que va a la pared debe quedar a la misma altura que el
                 borde de la madera.</strong> Cuando vemos que cumple los
                 criterios, marcamos la madera a través de los agujeros de la
                 ménsula
                 </p>
-                <img class="photo"src="../img/empty.jpg">
+                <figure class="photos">
+                    <div class="row">
+                        <img class="photoGroup" src="./img/posicionar-mensula.jpg">
+                        <img class="photoGroup" src="./img/posicionar-mensula-2.jpg">
+                    </div>
+                </figure>
+            </div>
+            <div class="substep">
+                <p>Cuando vemos que cumple los
+                criterios, marcamos la madera a través de los agujeros de la
+                ménsula
+                </p>
+                <figure class="photos">
+                    <div class="row">
+                        <img class="photo" src="./img/marcar-repisa.jpg">
+                    </div>
+                </figure>
             </div>
             <div class="substep">
                 <p>Luego de colocar la mecha para madera, agujerear el centro de la
                 marca entre 0,5 y 1cm, para facilitar la entrada del tornillo.
                 </p>
-                <img class="photo" src="../img/empty.jpg">
+                <figure class="photos">
+                    <img class="photo" src="./img/agujerear-repisa.jpg">
+                </figure>
             </div>
             <div class="substep">
                 <p>Posicionar las ménsulas y atornillar hasta que este firme. <strong>No
                 pasarse, ya que podemos "falsear" el agujero</strong>, lo que no
                 permitirá que el tornillo quede firme.
                 </p>
-                <img class="photo" src="../img/empty.jpg">
+                <figure class="photos">
+                    <img class="photo" src="./img/atornillar-repisa.jpg">
+                </figure>
+            </div>
+            <div class="substep">
+                <p>Repetir con las demás ménsulas</p>
+                <figure class="photos">
+                    <img class="photo" src="./img/repetir-repisa.jpg">
+                </figure>
             </div>
         </div>
         <div class="step">
-            <h3>Primer agujero</h3>
+            <h3>3. Primer agujero</h3>
             <div class="substep">
                 <p>Posicionar la repisa en donde iría y marcar una de las esquinas
-                    más alejadas de la madera.
+                    cercanas a la madera.
                 </p>
-                <img class="photo" src="../img/empty.jpg">
+                <figure class="photos">
+                    <img class="photo" src="./img/posicionar-aprox.jpg">
+                </figure>
             </div>
             <div class="substep">
                 <p>Habiendo colocado la mecha para pared en el taladro y seleccionado
@@ -246,84 +253,97 @@
                 el taladro y dañar la pared). Si no lo es, agujerear hasta
                 que el tarugo pueda entrar completamente.
                 </p>
-                <img class="photo" src="../img/empty.jpg">
+                <figure class="photos">
+                    <img class="photo" src="./img/agujerear-pared.jpg">
+                </figure>
             </div>
             <div class="substep">
-                <p>Colocar tarugo</p>
-                <img class="photo" src="../img/empty.jpg">
+                <p>Colocar tarugo dentro del agujero. Usar el martillo para
+                    que quede totalmente dentro. Si no entra del todo, es que
+                    hace falta agujerear más con el taladro.
+                </p>
+                <figure class="photos">
+                    <img class="photo" src="./img/tarugo-1.jpg"
+                    style="transform: scaleX(-1);">
+                </figure>
             </div>
             <div class="substep">
-                <p>Atornillar</p>
-                <img class="photo"src="../img/empty.jpg">
+                <p>Atornillar hasta que quede casi firme, para poder manipularlo
+                    luego
+                </p>
+                <figure class="photos">
+                    <img class="photo" src="./img/atornillar-pared-1.jpg">
+                </figure>
             </div>
         </div>
         <div class="step">
             <h3>Segundo agujero</h3>
             <div class="substep">
-                <p>Nivelar</p>
-                <img class="photo" src="../img/empty.jpg">
+                <p>Para nivelar la repisa, debemos acomodarla hasta que la
+                    burbuja del tubo que está paralelo a la repisa quede entre
+                    las dos líneas. 
+                </p>
+                <figure class="photos">
+                    <img class="photo" src="./img/nivelar.jpg">
+                </figure>
             </div>
             <div class="substep">
-                <p>Repetir proceso para agujerear</p>
-                <img class="photo" src="../img/empty.jpg">
+                <p>Mientras sostenemos la repsia para que se mantenga nivelada,
+                    marcamos la esquina contraria a la anterior. Soltamos la
+                    repisa y repetimos el proceso para agujerear, colocar el
+                    tarugo y atornillar.
+                </p>
+                <figure class="photos">
+                    <div class="row">
+                        <img class="photoGroup" src="./img/marcado-2.jpg">
+                        <img class="photoGroup" src="./img/agujear-pared-2.jpg">
+                    </div>
+                    <div class="row">
+                        <img class="photoGroup" src="./img/tarugo-2.jpg">
+                        <img class="photoGroup" src="./img/atornillar-pared-2.jpg">
+                    </div>
+                </figure>
             </div>
         </div>
         <div class="step">
             <h3>Agujeros restantes</h3>
             <div class="substep">
-                <p>Marcar agujeros inferiores</p>
-                <img class="photo" src="../img/empty.jpg">
+                <p>Marcar agujeros restantes y desatornillar la repisa de la
+                    pared</p>
+                <figure class="photos">
+                    <div class="row">
+                        <img class="photoGroup" src="./img/marcado-final-1.jpg">
+                        <img class="photoGroup" src="./img/marcado-final-2.jpg">
+                    </div>
+                    <div class="row">
+                        <img class="photoGroup" src="./img/marcado-final-3.jpg">
+                        <img class="photoGroup" src="./img/marcado-final-4.jpg">
+                    </div>
+                </figure>
             </div>
             <div class="substep">
-                <p>Repetir proceso para agujerear</p>
-                <img class="photo" src="../img/empty.jpg">
+                <p>Repetir proceso para agujerear, colocar el tarugo y
+                    atornillar</p>
+                <figure class="photos">
+                    <img class="photo" src="./img/repisa-puesta.jpg">
+                </figure>
             </div>
         </div>
         <div class="step">
             <h3>Testear</h3>
             <div class="substep">
                 <p>Colocar objetos</p>
-                <img class="photo" src="../img/empty.jpg">
+                <figure class="photos">
+                    <img class="photo" src="./img/repisa-testeada.jpg">
+                </figure>
             </div>
         </div>
-        </div>
-    </section>
-    <section class="feedback">
-        <div class="feedbackTitle">
-            <h2>¿Cómo fue tu experiencia?</h2>
-            <h3>Podés compartirla acá abajo</h3>
-        </div>
-        <div class="form">
-        <form id="form" action="" onsubmit="">
-            <div id="nameDiv" class="formInput">
-                <label for="nameInput">Tu nombre:</label>
-                <input id="nameInput" name="nameInput" type="text"
-                aria-required="true"maxlength="60" autocomplete="given-name"
-                placeholder="Roberto Casablanca, Anónimo123" required/>
-            </div>
-            <div id="imgDiv" class="formInput">
-                <label for="imgInput">Foto de/con tu repisa en uso:</label>
-                <input id="imgInput" name="imgInput" type="file"
-                aria-required="true" accept="image/*" alt="Subir" required/>
-            </div>
-            <div id="expDiv" class="formInput">
-                <label for="expInput">Cómo fue tu experiencia:</label>
-                <textarea id="expInput" name="expInput" type="text" maxlength="400"
-                placeholder="Fue una experiencia..."></textarea>
-                <div id="charDiv">
-                    <p id="charCount">0/400</p>
-                </div>
-            </div>
-            <div class="submit">
-                <input class="submitBtn" type="submit" value="Guardar"/>
-            </div>
-        </form>
         </div>
     </section>
     <footer>
         <p>Made by emmariescurrena</p>
         <a href="https://github.com/emmariescurrena" target="_blank">
-            <img src="../img/github.png" alt="github" >
+            <img src="./img/github.png" alt="github" >
         </a>
     </footer>
     <script src="./script.js"></script>
