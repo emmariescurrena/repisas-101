@@ -19,47 +19,52 @@
     --color-bg1: #e6e6e6;
     --color-bg2: #ffffff;
     --color-fg: #272135;
-  }
-  
+}
+
 [data-theme="dark"] {
     --color-bg1: #11111c;
     --color-bg2: #272135;
     --color-fg: #ffffff;
-  }
+}
 
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    color:var(--color-fg);
+    color: var(--color-fg);
 }
 
 #button {
     all: unset;
-    width: 14em;
-    height: 14em;
+    width: 6em;
+    height: 6em;
     display: flex;
     position: fixed;
-    bottom: -7em;
-    right: -7em;
+    bottom: 0.5em;
+    right: 0.5em;
     z-index: 1;
     background-color: var(--color-fg);
-    border-radius: 50%;
+    border-radius: 100%;
+    cursor: pointer;
 }
 
 #buttonImg {
     width: 4em;
     height: 4em;
     position: fixed;
-    bottom: 0.75em;
-    right: 0.75em;
+    bottom: 1.5em;
+    right: 1.5em;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: "Open Sans Bold", sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #9925c0;
 }
 
@@ -77,7 +82,9 @@ h3 {
     font-size: 2em;
 }
 
-p, li, label {
+p,
+li,
+label {
     font-size: 1em;
 }
 
@@ -109,9 +116,12 @@ strong {
     text-align: center;
     gap: 2em;
     background-color: var(--color-bg2);
-    h1, h2 {
+
+    h1,
+    h2 {
         margin: 0;
     }
+
     h2 {
         font-size: 2.5em;
         color: var(--color-fg);
@@ -152,6 +162,7 @@ strong {
     display: flex;
     flex-direction: column;
     text-align: center;
+
     p {
         margin: 0;
     }
@@ -174,6 +185,7 @@ strong {
     gap: 0.5em;
     border-radius: 24px;
     background-color: var(--color-bg2);
+
     h3 {
         margin-block-start: 0;
     }
@@ -192,8 +204,8 @@ strong {
 }
 
 input[type="checkbox"] {
-    appearance: none;   
-    vertical-align: middle; 
+    appearance: none;
+    vertical-align: middle;
     position: relative;
     bottom: -0.06em;
     width: 1em;
@@ -245,6 +257,7 @@ input[type="checkbox"]:focus {
     flex-direction: column;
     gap: 2em;
     margin: 2em 5%;
+
     h3 {
         margin: 0
     }
@@ -263,6 +276,7 @@ input[type="checkbox"]:focus {
 .substep {
     display: flex;
     flex-direction: column;
+
     p {
         margin: 0;
     }
@@ -282,7 +296,8 @@ input[type="checkbox"]:focus {
     flex-direction: row;
 }
 
-.photo, .photoGroup {
+.photo,
+.photoGroup {
     width: 100%;
     object-fit: cover;
 }
@@ -298,13 +313,14 @@ footer {
     align-items: center;
     gap: 0.5em;
     background-color: var(--color-bg1);
+
     a {
         margin: 0;
         padding: 0;
-    }    
+    }
 }
 
-a > img {
+a>img {
     width: 2em;
     height: 2em;
 }
@@ -314,18 +330,22 @@ a > img {
         flex-direction: row;
         justify-content: center;
     }
+
     .needles {
         padding: 1.5em 4% 2em;
         gap: 0.5em;
         border-radius: 24px;
         background-color: var(--color-bg2);
+
         h3 {
             margin-block-start: 0;
         }
     }
+
     .stepsDiv {
         margin: 2em 10%;
     }
+
     .step {
         padding: 2.5em;
     }
