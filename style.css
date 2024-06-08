@@ -36,8 +36,8 @@ body {
 
 #button {
     all: unset;
-    width: 6em;
-    height: 6em;
+    width: 4.5em;
+    height: 4.5em;
     display: flex;
     position: fixed;
     bottom: 0.5em;
@@ -49,11 +49,11 @@ body {
 }
 
 #buttonImg {
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     position: fixed;
-    bottom: 1.5em;
-    right: 1.5em;
+    bottom: 1.25em;
+    right: 1.25em;
 }
 
 h1,
@@ -305,7 +305,6 @@ input[type="checkbox"]:focus {
 .photo {
     border-radius: 15px;
 }
-
 
 footer {
     display: flex;
