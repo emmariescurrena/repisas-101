@@ -1,3 +1,3 @@
 # Repisas 101
 
-Responsive website of how to build a shelf
+Responsive website about how to build a shelf
